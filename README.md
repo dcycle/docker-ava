@@ -7,3 +7,7 @@ For example:
     docker run -v $(pwd)/example01/test:/app/code dcycle/ava
     docker run -v $(pwd)/example02/test:/app/code \
       -v $(pwd)/example02/code:/mycode dcycle/ava
+    docker run -v $(pwd)/example03/test:/app/code \
+      -v $(pwd)/example03/code:/mycode dcycle/ava
+
+See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/ava/).
