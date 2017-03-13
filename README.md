@@ -11,3 +11,9 @@ For example:
       -v $(pwd)/example03/code:/mycode dcycle/ava
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/ava/).
+
+More resources
+-----
+
+ * [
+Effortless unit testing with AVA, Niels Gerritsen, April 19, 2016, wecodetheweb.com](https://wecodetheweb.com/2016/04/19/effortless-unit-testing-with-ava/).
