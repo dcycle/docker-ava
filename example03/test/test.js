@@ -1,5 +1,8 @@
 import test from 'ava'
 import sinon from 'sinon'
+// This is not actually used in this test, just confirming it does not break
+// things.
+import Vue from 'vue'
 
 var my = require('/mycode/dangerlevel.js');
 
