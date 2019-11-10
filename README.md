@@ -4,11 +4,13 @@ Unit-test Javascript code with [ava](https://github.com/avajs/ava) and [sinon](h
 
 For example:
 
-    docker run -v $(pwd)/example01/test:/app/code dcycle/ava
-    docker run -v $(pwd)/example02/test:/app/code \
-      -v $(pwd)/example02/code:/mycode dcycle/ava
-    docker run -v $(pwd)/example03/test:/app/code \
-      -v $(pwd)/example03/code:/mycode dcycle/ava
+    docker run --rm -v $(pwd)/example01/test:/app/code dcycle/ava:2
+    docker run --rm -v $(pwd)/example02/test:/app/code \
+      -v $(pwd)/example02/code:/mycode dcycle/ava:2
+    docker run --rm -v $(pwd)/example03/test:/app/code \
+      -v $(pwd)/example03/code:/mycode dcycle/ava:2
+    docker run --rm -v $(pwd)/example04/test:/app/code \
+      -v $(pwd)/example04/code:/mycode dcycle/ava:2
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/ava/).
 
