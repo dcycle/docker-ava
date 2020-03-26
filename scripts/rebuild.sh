@@ -16,6 +16,8 @@ else
   source "$CREDENTIALS";
 fi
 
+./test.sh
+
 PROJECT=ava
 DATE=`date '+%Y-%m-%d-%H-%M-%S-%Z'`
 MAJORVERSION='2'
