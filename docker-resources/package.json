@@ -1,0 +1,15 @@
+{
+	"name": "docker-ava",
+  "ava": {
+		"files": [
+			"code/*"
+		]
+  },
+	"scripts": {
+		"test": "ava"
+	},
+	"devDependencies": {
+    "ava": "*",
+    "sinon": "*"
+	}
+}

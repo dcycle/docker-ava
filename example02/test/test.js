@@ -1,5 +1,4 @@
-import test from 'ava'
-
+const test = require('ava');
 var my = require('/mycode/timesten.js');
 
 test('two times ten is twenty', t => {

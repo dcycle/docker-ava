@@ -4,6 +4,8 @@ RUN mkdir -p /app/code
 
 WORKDIR /app
 
-RUN npm install ava sinon
+COPY docker-resources/package.json package.json
 
-ENTRYPOINT [ "/app/node_modules/.bin/ava" ]
+RUN npm install
+
+ENTRYPOINT [ "npm", "test" ]
