@@ -9,6 +9,7 @@
 		"test": "ava"
 	},
 	"devDependencies": {
-		"ava": "*"
+    "ava": "*",
+    "sinon": "*"
 	}
 }
