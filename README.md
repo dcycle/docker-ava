@@ -4,15 +4,28 @@ Unit-test Javascript code with [ava](https://github.com/avajs/ava) and [sinon](h
 
 For example:
 
-    docker run --rm -v $(pwd)/example01/test:/app/code dcycle/ava:2.2019-12-30-21-06-44-UTC
+    docker run --rm -v $(pwd)/example01/test:/app/code dcycle/ava:3
     docker run --rm -v $(pwd)/example02/test:/app/code \
-      -v $(pwd)/example02/code:/mycode dcycle/ava:2.2019-12-30-21-06-44-UTC
+      -v $(pwd)/example02/code:/mycode dcycle/ava:3
     docker run --rm -v $(pwd)/example03/test:/app/code \
-      -v $(pwd)/example03/code:/mycode dcycle/ava:2.2019-12-30-21-06-44-UTC
+      -v $(pwd)/example03/code:/mycode dcycle/ava:3
     docker run --rm -v $(pwd)/example04/test:/app/code \
-      -v $(pwd)/example04/code:/mycode dcycle/ava:2.2019-12-30-21-06-44-UTC
+      -v $(pwd)/example04/code:/mycode dcycle/ava:3
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/ava/).
+
+Migrating your test scripts from Docker Ava 2 to Docker Ava 3
+-----
+
+Instead of
+
+    import test from 'ava'
+    import sinon from 'sinon'
+
+Use:
+
+    const test = require('ava');
+    const sinon = require('sinon');
 
 More resources
 -----

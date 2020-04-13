@@ -1,5 +1,5 @@
-import test from 'ava'
-import sinon from 'sinon'
+const test = require('ava');
+const sinon = require('sinon');
 
 var my = require('/mycode/dangerlevel.js');
 
