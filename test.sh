@@ -1,5 +1,5 @@
 set -e
-docker pull node
+docker pull node:alpine
 docker build -t local-dcycle-ava-image .
 
 docker run --rm -v $(pwd)/example01/test:/app/code local-dcycle-ava-image
