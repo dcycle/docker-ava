@@ -9,7 +9,7 @@
 		"test": "ava"
 	},
 	"devDependencies": {
-    "ava": "*",
+    "ava": "^3",
     "sinon": "*"
 	}
 }
