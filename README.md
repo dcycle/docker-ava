@@ -1,3 +1,5 @@
+[![GitHub Actions](https://github.com/dcycle/docker-ava/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
+
 Unit-test Javascript code with [ava](https://github.com/avajs/ava) and [sinon](http://sinonjs.org).
 
 For example:
